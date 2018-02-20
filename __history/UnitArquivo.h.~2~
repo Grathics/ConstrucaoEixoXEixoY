@@ -1,0 +1,11 @@
+
+
+
+class Desenho{
+float MAlpha[1000];
+float MVetorGr[1000];
+float BetaT;
+
+
+
+};

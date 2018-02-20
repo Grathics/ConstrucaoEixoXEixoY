@@ -1,0 +1,32 @@
+#ifndef  UnitArquivoH
+#define UnitArquivoH
+
+
+class Desenho{
+public:
+float MAlpha[1000];
+float LAlpha[1000];
+float MMVetorGr[1000];
+float LMVetorGr[1000];
+float BetaT;
+float MZo[1000];
+float LZo[1000];
+void SetMAlpha(float);
+float GetMAlpha();
+void SetLAlpha(float);
+float GetLAlpha();
+void SetMMVetorGr(float);
+float GetMMVetorGr();
+void SetBetaT(float);
+float GetBetaT ();
+void SetMZo(float);
+float GetMzo();
+void SetLZo(float);
+float GetLzo();
+
+
+
+};
+
+
+#endif

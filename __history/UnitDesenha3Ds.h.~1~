@@ -1,0 +1,67 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitDesenha3DsH
+#define UnitDesenha3DsH
+//---------------------------------------------------------------------------
+#include <vcl.h>
+#include <math.h>
+class VetorDes3Ds{
+public:
+   VetorDes3Ds(long double);
+   int X(int x);
+   int Y(int y);
+   int OX(float x);
+   int OY(float y);
+   int OXDes2(int x);
+   int OYDes2(int y);
+   void Eixos1(TCanvas *);
+   long double EixoXo2(long double ,long double  ,  long double *,long double *);
+   int EixoYo(long double zo, long double Alphat,long double Betat,long double MVetor);
+  float EixoXMo(long double ,long double );
+  float EixoYMo(long double ,long double ,long double, long double );
+   long double GetLAlpha(int );
+   long double  GetMAlpha(int);
+   long double GetLMVetorG(int );
+   long double GetMMVetorG(int);
+   long double GetBetaT();
+  void SetLAlpha(long double  ,int );
+   void  SetMAlpha(long double , int);
+   void SetLMVetorG(long double ,int );
+   void SetBetaT(long double);
+   void SetMMVetorG(long double ,int i);
+   int GetPosi1();
+   long double GetMZo(int);
+   void SetMZo(long double ,int  );
+   long double GetLZo(int);
+   void SetLZo(long double,int);
+   void SetPosi1(int);
+   void Desenha(TCanvas *);
+   void LimpaSesenha(TCanvas*);
+   long double Beta;
+
+   const Kx;
+   const Ky;
+   float KOx;
+   float KOy;
+   long double LAlpha[1000];
+   long double MAlpha[1000];
+   long double LMVetorG[1000];
+   long double MMVetor[1000];
+   long double MZo1[1000];
+
+   float LZo1[1000];
+
+   int Posi1;
+
+
+
+};
+
+
+
+
+
+
+
+
+#endif
